@@ -1,0 +1,22 @@
+@host = http://localhost:3000
+# @host = https://whispering-plains-13580.herokuapp.com
+@recurso = eventos
+### busca eventos
+
+GET {{host}}/{{recurso}} HTTP/1.1
+content-type: application/json
+
+### salva evento
+POST {{host}}/{{recurso}} HTTP/1.1
+content-type: application/json
+
+{
+    "imagem":{
+        "src": "https://i0.wp.com/www.amaer.com.br/wp-content/uploads/2019/09/amaer-campeonato-banner-1.jpg?w=1200&ssl=1",
+        "alt": "First slide"
+    },
+        "titulo": "Evento 1",
+        "descricao": "Descrição do Evento 1",
+        "link": "http://amaer-noticia1.com"        
+  }
+ 
