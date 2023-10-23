@@ -16,8 +16,6 @@ class App {
     let app = new Server();
 
     var linksPermitidos = [
-      "http://front-associacao.herokuapp.com",
-      "https://front-associacao.herokuapp.com",
       "http://localhost:3000",
       "https://localhost:3000",
       "https://localhost:3001",
@@ -69,9 +67,9 @@ class App {
     // simple route
     app.get("/", (req, res) => {
       res.json({
-        project: "Plataforma de Gerenciamento de Associações",
+        project: "Plataforma de Gerenciamento de Arquitetura",
         version: "beta",
-        author: "IFPR-Paranavaí",
+        author: "Cadu and Allan",
       });
     });
 
@@ -79,7 +77,7 @@ class App {
     const PORT = process.env.PORT || 4000;
     app.listen(PORT, () => {
       global.logger.success(
-        `Plataforma de Gerenciamento de Associações API rodando em ${PORT}`
+        `Plataforma de Gerenciamento de Arquitetura API rodando em ${PORT}`
       );
     });
   }

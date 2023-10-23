@@ -40,23 +40,6 @@ class Loader {
             });
     }
 
-    // static loadSeeders() {
-    //     let baseDir = (__dirname + '/src/main/seeders');
-    //     fs
-    //         .readdirSync(baseDir)
-    //         .filter(function (file) {
-    //             return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
-    //         })
-    //         .forEach(function (file) {
-    //           if (file !== 'index.js') {
-    //             return
-    //           }
-    //           global.logger.info(`Carregando seeders: ${file}`);
-    //           let seeder = require((path.join(baseDir, file)));
-    //           seeder();
-    //         });
-    // }
-
 }
 
 module.exports = Loader;

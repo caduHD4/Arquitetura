@@ -22,10 +22,4 @@ module.exports = function GeradorDeLink(indicador) {
         const link = Gatos[numeroAleatorio];
         return link;
     }
-
-    // if (indicador === 3) {
-    //     const numeroAleatorio = gerarNumeroAleatorio();
-    //     const link = Gatos[numeroAleatorio];
-    //     return link;
-    // }
 }
