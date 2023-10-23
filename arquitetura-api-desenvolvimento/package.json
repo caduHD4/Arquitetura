@@ -1,7 +1,7 @@
 {
-  "name": "association-api",
+  "name": "Arquitetura-api",
   "version": "1.0.0",
-  "description": "Associations Managment Platform API",
+  "description": "Arquitetura Managment Platform API",
   "main": "index.js",
   "scripts": {
     "start": "node App.js",
@@ -13,7 +13,7 @@
     "express",
     "api"
   ],
-  "author": "Prof. Marcelo F. Terenciani",
+  "author": "Cadu and Allan",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
