@@ -7,9 +7,14 @@ const upload = multer({ dest: "src/main/Arquivos/AnexosFotos/" });
 module.exports = class RotaFotos {
   constructor(app) {
     app
-      .route("/fotos")
+      .route("/fotos/gatos")
       .post(ControleFotos.criarFoto)
-      .get(ControleFotos.buscarFotos);
+      .get(ControleFotos.buscarFotosGatos);
+
+      app
+      .route("/fotos/cachorros")
+      .post(ControleFotos.criarFoto)
+      .get(ControleFotos.buscarFotosCachorros);
     app
       .route("/fotos/:id")
       .put(ControleFotos.atualizarFoto)

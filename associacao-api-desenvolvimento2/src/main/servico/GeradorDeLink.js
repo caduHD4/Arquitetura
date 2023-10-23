@@ -17,9 +17,9 @@ module.exports = function GeradorDeLink(indicador) {
         return link;
     }
 
-    if (indicador === 2) {
+    else if (indicador === 2) {
         const numeroAleatorio = gerarNumeroAleatorio();
-        const link = Cachorros[numeroAleatorio];
+        const link = Gatos[numeroAleatorio];
         return link;
     }
 

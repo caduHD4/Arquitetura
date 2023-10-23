@@ -1,15 +1,15 @@
 
 const Cachorros = [
-    'https://httpstatusdogs.com/100-continue',
-    'https://httpstatusdogs.com/304-not-modified',
-    'https://httpstatusdogs.com/100-continue',
-    'https://httpstatusdogs.com/304-not-modified',
-    'https://httpstatusdogs.com/100-continue',
-    'https://httpstatusdogs.com/304-not-modified',
-    'https://httpstatusdogs.com/100-continue',
-    'https://httpstatusdogs.com/304-not-modified',
-    'https://httpstatusdogs.com/100-continue',
-    'https://httpstatusdogs.com/304-not-modified'
+    'https://httpstatusdogs.com/img/100.jpg',
+    'https://httpstatusdogs.com/img/304.jpg',
+    'https://httpstatusdogs.com/img/100.jpg',
+    'https://httpstatusdogs.com/img/304.jpg',
+    'https://httpstatusdogs.com/img/100.jpg',
+    'https://httpstatusdogs.com/img/304.jpg',
+    'https://httpstatusdogs.com/img/100.jpg',
+    'https://httpstatusdogs.com/img/304.jpg',
+    'https://httpstatusdogs.com/img/100.jpg',
+    'https://httpstatusdogs.com/img/304.jpg'
 ];
 
 module.exports = Cachorros;

@@ -23,10 +23,22 @@ module.exports = class ControleFotos {
     }
   }//create
 
-  static async buscarFotos(req, res) {
+  static async buscarFotosGatos(req, res) {
     try {
       console.log("logggggggg");
       const fotos = await ServicoFotos.buscarFotosGatos();
+
+      console.log("fotos", fotos);
+      res.json(fotos);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  }// findAll
+
+  static async buscarFotosCachorros(req, res) {
+    try {
+      console.log("logggggggg");
+      const fotos = await ServicoFotos.buscarFotosCachorros();
 
       console.log("fotos", fotos);
       res.json(fotos);

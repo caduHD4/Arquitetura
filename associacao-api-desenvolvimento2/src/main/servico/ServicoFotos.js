@@ -17,13 +17,24 @@ module.exports = class ServicoFotos {
     static async buscarFotosGatos() {
             try {
                 console.log("aqui amigo helol");
-                const link = GeradorDeLink(1);
+                const link = GeradorDeLink(2);
                 console.log(link, "sou eu no service");
                 return link
             } catch (error) {
                 throw new Error("Falha ao buscar fotos: " + error);
             }
     } // buscarFotos
+
+    static async buscarFotosCachorros() {
+        try {
+            console.log("aqui amigo helol");
+            const link = GeradorDeLink(1);
+            console.log(link, "sou eu no service");
+            return link
+        } catch (error) {
+            throw new Error("Falha ao buscar fotos: " + error);
+        }
+} // buscarFotos
 
     static async buscarFotoPorId(id) {
         try {
