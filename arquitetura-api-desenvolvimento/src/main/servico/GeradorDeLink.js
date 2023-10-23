@@ -1,8 +1,6 @@
 const Gatos = require("../Arquivos/Gatos");
 const Cachorros = require("../Arquivos/cachorros");
 
-
-
 module.exports = function GeradorDeLink(indicador) {
 
 
@@ -13,7 +11,6 @@ module.exports = function GeradorDeLink(indicador) {
     if (indicador === 1) {
         const numeroAleatorio = gerarNumeroAleatorio();
         const link = Cachorros[numeroAleatorio];
-        console.log(link, "ola");
         return link;
     }
 

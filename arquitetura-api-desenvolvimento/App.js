@@ -8,8 +8,6 @@ const path = require("path");
 const Loader = require("./Loader");
 const Server = require("./Server");
 
-const sequelize = require('./src/main/conexao/FabricaConexaoMysql');
-
 class App {
   
   static async init() {
@@ -56,14 +54,6 @@ class App {
 
     Loader.loadAll(app);
 
-    (async () => {
-      try {  
-        await sequelize.sync();
-        console.log('Modelos sincronizados com o banco de dados!!!');   
-      } catch (error) {
-        console.error('Não foi possível conectar ou sincronizar os modelos com o banco de dados:', error);
-      }
-    })();
     // simple route
     app.get("/", (req, res) => {
       res.json({

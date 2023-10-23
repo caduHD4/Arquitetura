@@ -7,9 +7,7 @@ const basename = path.basename(module.filename);
 class Loader {
 
     static loadAll(app) {
-        Loader.loadModels();
         Loader.loadRoutes(app);
-        // Loader.loadSeeders();
     }
 
     static loadRoutes(app) {
@@ -23,20 +21,6 @@ class Loader {
                 global.logger.info(`Carregando rotas: ${file}`)
                 let route = require((path.join(baseDir, file)));
                 new route(app);
-            });
-    }
-
-    static loadModels() {
-        let baseDir = (__dirname + '/src/main/modelos');
-        fs
-            .readdirSync(baseDir)
-            .filter(function (file) {
-                return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
-            })
-            .forEach(function (file) {
-                global.logger.info(`Carregando modelos: ${file}`);
-                let model = require((path.join(baseDir, file)));
-                new model();
             });
     }
 
